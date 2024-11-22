@@ -1,0 +1,31 @@
+* { 
+    
+    
+}
+header {
+    margin: 0% 30%;
+    text-align: center;
+}
+
+body {
+    padding: 5% 20% ;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+div {
+    margin: 30px;
+}
+
+.middleColor {
+    background-color: aqua;
+}
+
+aside {
+    padding 
+
+}
