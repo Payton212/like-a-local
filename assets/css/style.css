@@ -17,7 +17,9 @@ main {
     flex-wrap: wrap;
     padding: 10px;
     justify-content: space-evenly;
+   
 }
+
 div {
     margin: 30px;
 }
@@ -32,4 +34,5 @@ aside {
 }
 
 footer {
+    
 }
