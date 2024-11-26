@@ -8,8 +8,6 @@ const error = document.querySelector('#error');
 const hidden = document.getElementById('list-of-attractions');
 const radios = document.getElementsByName('attractions');
 
- hidden.style.display="none"; 
-
 homeButton.addEventListener('click', function(event){
     event.preventDefault;
     homePage()
@@ -28,10 +26,10 @@ function homePage(){
 attractionButton.addEventListener('click', function(event){
     event.preventDefault();
    
-    if(hidden.style.display === "block"){
-        hidden.style.display = "none";
+    if(hidden.style.display === "none"){
+        hidden.style.display = "block";
     }else
-    hidden.style.display = "block";
+    hidden.style.display = "none";
 });
 
 submitButton.addEventListener('click', function (event) {
