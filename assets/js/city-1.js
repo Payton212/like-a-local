@@ -6,7 +6,8 @@ const attractionButton = document.getElementById('attraction-type');
 const contentInput = document.querySelector('#content');
 const imageInput = document.querySelector('#image');
 const error = document.querySelector('#error');
-const listButtons = document.getElementById('list-of-attractions');
+const hide = document.getElementById('list-of-attractions');
+
 
   
 
@@ -27,7 +28,7 @@ function homePage(){
 
 attractionButton.addEventListener('click', function(event){
     event.preventDefault();
-   listButtons.innerHTML = '';
+   
 
    
   
