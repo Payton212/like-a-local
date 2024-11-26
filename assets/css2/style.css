@@ -11,3 +11,7 @@ header {
  img {
     display:block;
  }
+
+ #list-of-attractions{
+   display:none;
+ }
