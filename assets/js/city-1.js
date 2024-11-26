@@ -50,21 +50,39 @@ submitButton.addEventListener('click', function (event) {
         attractionType = 'indoor';
         console.log('indoor');
     }
-
+ 
+          /*let selectedAttraction = '';
+   document.querySelectorAll('input[name = "attractions"]').forEach((radio) => {
+           radio.addEventListener('change',() =>{
+               selectedAttraction = radio.value;
+           });
+    });*/
 
     for(radio of radios){
         if(radio.checked){
             isChecked = true;
         }
     }
+   
+    if(radios[3]){
+        console.log('club');
+    }else if (radios[2]){
+        console.log('movietheatre');
+    }else if(radios[1]){
+        console.log('restaurant');
+    } else if(radios[4]){
+        console.log('park');
+    }
+   
 
 
     let newEntry = {
         username : username,
         content : content,
+        
         attractionType ,
     };
-   let savedEntry = JSON.parse(localStorage.getItem('entry'));
+   let savedEntry = JSON.parse(localStorage.getItem('entry')) || [];
 
    savedEntry.push(newEntry);
 
