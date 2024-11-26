@@ -3,12 +3,13 @@
     
 }
 header {
-    margin: 0% 30%;
+    margin: 10% 30%;
     text-align: center;
 }
 
 body {
-    padding: 5% 20% ;
+    margin: 0% 10% ;
+    background-color: #212a31;
 }
 
 main {
@@ -17,6 +18,9 @@ main {
     flex-wrap: wrap;
     padding: 10px;
     justify-content: space-evenly;
+    margin-bottom: 0;
+    border-radius: 2%;
+    margin: 2% 0%;
    
 }
 
@@ -28,11 +32,39 @@ div {
     background-color: #748d92;
 }
 
-aside {
-    padding :0%;
-
+header {
+    margin: auto;
+    padding: 0;
 }
-
 footer {
     background-color: #d3d9d4;
+    margin-top: 0;
+    text-align: center;
+}
+
+button {
+    /* width: 25%; */
+    height: 25%;
+    margin: 10px;
+    padding: 0;
+}
+
+img {
+    /* width: 200px; */
+    /* height: 200px; */
+}
+
+button:hover {
+    background-color: white;
+}
+
+.card-list:has(button:hover) button:not(:hover) {
+    filter: blur(5px);
+  }
+
+aside {
+    margin: 0;
+}
+.rounded-image {
+    border-radius: 10%;
 }
