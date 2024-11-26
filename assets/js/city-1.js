@@ -8,7 +8,7 @@ const error = document.querySelector('#error');
 const hidden = document.getElementById('list-of-attractions');
 const radios = document.getElementsByName('attractions');
 
-  
+ hidden.style.display="none"; 
 
 homeButton.addEventListener('click', function(event){
     event.preventDefault;
