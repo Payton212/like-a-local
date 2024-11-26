@@ -21,7 +21,7 @@
     <div> <img src ="https://placehold.co/100"></div>
 
 <section id = "entry">
-    entry will appear here 
+    <!-- entry will appear here -->
 </section>
 
     <section>
@@ -30,23 +30,25 @@
         <label for = "username"> username</label>
             <input type = "username" name = "username" id = "username">
         
-        <label for="toggle"> indoor </label>
-            <input type="checkbox" name ="toggle" id ="toggle" value = "outdoor">
-            <label for = "toggle">outdoor</label>
+        <label for="toggle"> indoor/outdoor </label>
+            <input type="checkbox" name ="toggle" id ="toggle">
          <div>
       <button id = "attraction-type"> Type of Attraction </button>
+
           <ul id = "list-of-attractions">
          <li> <label id = "park"> <input type ="radio" name = "attractions" value = "park" >Park</label></li>
          <li> <label id = "restaurant"> <input type ="radio" name = "attractions" value = "restaurant" >Restaurant</label></li>
          <li> <label id = "movietheatre"> <input type ="radio" name = "attractions" value = " movietheatre" >Movietheatre</label></li>
          <li> <label id = "club"> <input type ="radio" name = "attractions" value = "club" >Club</label></li>
+
           </ul>
            
          </div>
             <label for ="content"> entry</label>
             <textarea type = "content" name ="content" id ="content"></textarea>
               
-          
+            <p>drop image file here</p>
+             <input type = "file" name ="image1" id = "image" accept = "image/*">
 
             <input type ="submit" id ="submit">
 
