@@ -7,7 +7,7 @@ const contentInput = document.querySelector('#content');
 const imageInput = document.querySelector('#image');
 const error = document.querySelector('#error');
 const listButtons = document.getElementById('list-of-attractions');
-const firstbutton = document.querySelector('#li')
+
   
 
 homeButton.addEventListener('click', function(event){
@@ -29,30 +29,7 @@ attractionButton.addEventListener('click', function(event){
     event.preventDefault();
    listButtons.innerHTML = '';
 
-   const attractions = ['park', 'restaurant', 'movie theatre'];
-   const checkboxes = [];
-
-   attractions.forEach(attraction => {
-       const li = document.createElement('li');
-       const checkbox = document.createElement('input');
-       checkbox.type = 'checkbox';
-       checkbox.value = attraction;
-
-       
-       checkbox.addEventListener('change', function() {
-           checkboxes.forEach(cb => {
-               if (cb !== checkbox) {
-                   cb.checked = false; 
-               }
-           });
-       });
-
-       li.textContent = attraction;
-       li.appendChild(checkbox);
-       listButtons.appendChild(li);
-       checkboxes.push(checkbox); 
-       console.log(checkbox);
-   });
+   
   
 });
 
@@ -72,7 +49,7 @@ submitButton.addEventListener('click', function (event) {
 
 
     if(username === '' || content === ''){
-        errorMessage('error', 'this is an error message');
+        errorMessage('error', 'please complete the form');
         return;
     }else
     document.querySelector('#error').textContent = '';
