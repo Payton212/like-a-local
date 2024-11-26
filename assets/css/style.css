@@ -1,5 +1,5 @@
-* { 
-}
+/** { 
+}*/
 
 header {
     margin: 10% 30%;
@@ -54,10 +54,10 @@ button {
     padding: 0;
 }
 
-img {
-    /* width: 200px; */
-    /* height: 200px; */
-}
+/*img {
+    /* width: 200px; 
+    /* height: 200px; 
+}*/
 
 button:hover {
     background-color: white;
