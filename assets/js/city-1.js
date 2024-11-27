@@ -7,8 +7,12 @@ const contentInput = document.querySelector('#content');
 const error = document.querySelector('#error');
 const hidden = document.getElementById('list-of-attractions');
 const radios = document.getElementsByName('attractions');
+
+hidden.style.display ="none";
+
 const nameInput = document.getElementById('name');
 const section = document.getElementById('entry');
+
 
 
 homeButton.addEventListener('click', function(event){
