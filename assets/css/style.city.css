@@ -15,3 +15,6 @@ header {
  #list-of-attractions{
    display:none;
  }
+ .img{
+   background-size:contain;
+ }
