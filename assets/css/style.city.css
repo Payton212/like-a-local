@@ -18,6 +18,7 @@ header {
    display:none;
  }
 
+
  .homePage {
    display: flex;
    justify-content: left;
@@ -43,4 +44,8 @@ header {
  .submit {
    background-color: #124e66;
    color: #124e66;
+}
+ .img{
+   background-size:contain;
+
  }
