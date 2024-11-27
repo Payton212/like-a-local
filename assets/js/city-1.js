@@ -51,46 +51,47 @@ submitButton.addEventListener('click', function (event) {
         console.log('indoor');
     }
  
-          /*let selectedAttraction = '';
-   document.querySelectorAll('input[name = "attractions"]').forEach((radio) => {
-           radio.addEventListener('change',() =>{
-               selectedAttraction = radio.value;
-           });
-    });*/
-
-    for(radio of radios){
+         venues = document.querySelectorAll('[name = "attractions"]');
+    let checkedValue = null;
+   for(radio of venues){
         if(radio.checked){
-            isChecked = true;
+            checkedValue = radio.value;
+            break;
         }
     }
-   
-    if(radios[3]){
-        console.log('club');
-    }else if (radios[2]){
-        console.log('movietheatre');
-    }else if(radios[1]){
-        console.log('restaurant');
-    } else if(radios[4]){
-        console.log('park');
-    }
-   
-
-
+    
     let newEntry = {
         username : username,
         content : content,
-        
+        checkedValue,
         attractionType ,
     };
    let savedEntry = JSON.parse(localStorage.getItem('entry')) || [];
 
    savedEntry.push(newEntry);
 
-    if(username === '' || content === '' || !isChecked){
+    if(username === '' || content === ''){
         errorMessage('error', 'please complete the form');
         return;
     }else
     document.querySelector('#error').textContent = '';
 
    localStorage.setItem('entry',JSON.stringify(savedEntry));
+
 });
+
+// creating the entries
+function oldEntrys(){
+    if(localStorage.length === 0){
+        noEntrys('empty', 'please create an entry');
+    }else {
+    createEntrys();
+    }
+}
+
+function createEntrys(){
+    let savedEntry = JSON.parse(localStorage.getItem('entry')) || [];
+    for(let i = 0;i < savedEntry.length; i++ ){
+        
+    }
+}
