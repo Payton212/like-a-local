@@ -164,12 +164,6 @@ function createEntrys(){
         }
        
 
-        
-                
-
-       
-
-
         H2.textContent = savedEntry[i].username;
         H3.textContent = savedEntry[i].name;
         H4.textContent = savedEntry[i].checkedValue;
