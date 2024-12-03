@@ -84,11 +84,11 @@ modalSubmit.addEventListener('click', function (event) {
     
     let attractionType;
     if(flexSwitchCheckChecked.checked){
-    attractionType = 'outdoor';
-      console.log('outdoor');
+    attractionType = 'Outdoor';
+      console.log('Outdoor');
     }else{
-        attractionType = 'indoor';
-        console.log('indoor');
+        attractionType = 'Indoor';
+        console.log('Indoor');
     }
  
          venues = document.querySelectorAll('[name = "attractions"]');
@@ -146,16 +146,10 @@ function createEntrys(){
         }else if (savedEntry[i].checkedValue == 'restaurant'){
             div.classList.add('img');
             div.style.backgroundImage = "url('assets/stockIMGS/restaurant.jpg') ";
-            Element.style.backgroundSize = "500px"
         }
                 
 
-        H2.style.color = 'white';
-        H3.style.color = 'white';
-        H4.style.color = 'white';
-        H5.style.color = 'white';
-        P.style.color = 'white';
-        
+       
 
         H2.textContent = savedEntry[i].username;
         H3.textContent = savedEntry[i].name;
