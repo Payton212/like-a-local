@@ -112,17 +112,29 @@ function createEntrys(){
         const P = document.createElement('p');// entry
         if(savedEntry[i].checkedValue == 'park'){
             div.classList.add('img');
+            div.classList.add('entry');
             div.style.backgroundImage = "url('assets/stockIMGS/park.jpg') ";
+            
         }else if(savedEntry[i].checkedValue == 'movietheatre'){
             div.classList.add('img');
             div.style.backgroundImage = "url('assets/stockIMGS/movie-theatre.jpg') ";
+                                   
         }else if (savedEntry[i].checkedValue == 'club'){
             div.classList.add('img');
             div.style.backgroundImage = "url('assets/stockIMGS/club.jpg') ";
         }else if (savedEntry[i].checkedValue == 'restaurant'){
             div.classList.add('img');
             div.style.backgroundImage = "url('assets/stockIMGS/restaurant.jpg') ";
+            Element.style.backgroundSize = "500px"
         }
+                
+
+        H2.style.color = 'white';
+        H3.style.color = 'white';
+        H4.style.color = 'white';
+        H5.style.color = 'white';
+        P.style.color = 'white';
+        
 
         H2.textContent = savedEntry[i].username;
         H3.textContent = savedEntry[i].name;

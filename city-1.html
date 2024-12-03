@@ -7,69 +7,129 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"/>
-      <link rel="stylesheet" href="assets/css/style.city.css">
+      rel="stylesheet"
+    />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.city.css" />
     <script defer src="./assets/js/city-1.js" type="text/javascript"></script>
-</head>
-<body>
-<header>  <button class= "homepage" id ="home">Home</button> 
-<h1>Denver</h1></header>
-<main>
+  </head>
+  <body>
+    <header>
+      <button class="button" id="home">Home</button>
+    </header>
+    <main>
+      <img src="assets/img/Denver City Page Header.png" alt="Denver" />
+      <section id="entry">
+        <!-- entry will appear here -->
+      </section>
 
-<section id = "entry"  >
-    <!-- entry will appear here -->
-</section>
-
-    <section>
+      <section>
         <form>
-        <h2> Type Your Entry Below</h2>
-        <label for = "username"> Username</label>
-            <input class= "formBox" type = "username" name = "username" id = "username">
-        
+          <h2>Type Your Entry Below</h2>
+          <label for="username"> Username</label>
+          <input
+            class="formBox"
+            type="username"
+            name="username"
+            id="username"
+          />
 
-        <label for = "name">Name of Attraction</label>
-            <input type = "name" name = "name" id = "name">
+          <label for="name">Name of Attraction</label>
+          <input type="name" name="name" id="name" />
+          <div class="indoorOutdoor">
+            <label for="toggle">Indoor </label>
 
-        <label for="toggle"> Indoor </label>
-          
-            <input type="checkbox" name ="toggle" id ="toggle">
+            <!-- <input type="checkbox" name="toggle" id="toggle" /> -->
 
             <div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-  <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-</div>
-            <label for ="toggle">Outdoor</label>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+              <label
+                class="form-check-label"
+                for="flexSwitchCheckChecked"
+              ></label>
+            </div>
+            <label for="toggle">Outdoor</label>
+          </div>
+          <div>
+            <button id="attraction-type">Type of Attraction</button>
 
-         <div>
-      <button id = "attraction-type"> Type of Attraction </button>
+            <ul id="list-of-attractions">
+              <li>
+                <label for="park">
+                  <input
+                    type="radio"
+                    name="attractions"
+                    value="park"
+                    id="park"
+                  />Park</label
+                >
+              </li>
+              <li>
+                <label id="restaurant">
+                  <input
+                    type="radio"
+                    name="attractions"
+                    value="restaurant"
+                    id="restaurant"
+                  />Restaurant</label
+                >
+              </li>
+              <li>
+                <label id="movietheatre">
+                  <input
+                    type="radio"
+                    name="attractions"
+                    value="movietheatre"
+                    id="movietheatre"
+                  />Movietheatre</label
+                >
+              </li>
+              <li>
+                <label id="club">
+                  <input
+                    type="radio"
+                    name="attractions"
+                    value="club"
+                    id="club"
+                  />Club</label
+                >
+              </li>
+            </ul>
+          </div>
+          <label for="content"> Entry</label>
+          <textarea
+            class="formBox"
+            type="content"
+            name="content"
+            id="content"
+          ></textarea>
 
-          <ul id = "list-of-attractions">
-         <li> <label for = "park"> <input type ="radio" name = "attractions" value = "park" id = "park">Park</label></li>
-         <li> <label id = "restaurant"> <input type ="radio" name = "attractions" value = "restaurant" id = "restaurant">Restaurant</label></li>
-         <li> <label id = "movietheatre"> <input type ="radio" name = "attractions" value = "movietheatre" id = "movietheatre">Movietheatre</label></li>
-         <li> <label id = "club"> <input type ="radio" name = "attractions" value = "club" id = "club">Club</label></li>
+          <p>drop image file here</p>
+          <input name="image1" id="image" accept="image/*" />
 
-          </ul>
-           
-         </div>
-            <label  for ="content"> Entry</label>
-            <textarea class= "formBox"type = "content" name ="content" id ="content"></textarea>
-              
-            <p>drop image file here</p>
-             <input type = "file" name ="image1" id = "image" accept = "image/*">
+          <input class="submit" type="submit" id="submit" />
 
-            <input class="submit" ="submit" id ="submit">
-
-            <div><p id ="error"></p></div>
+          <div><p id="error"></p></div>
         </form>
-    </section>
-</main>
-<footer>
-</footer>
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
-  
+      </section>
+      <footer></footer>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+</html>
