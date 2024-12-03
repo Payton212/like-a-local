@@ -65,7 +65,7 @@ submitButton.addEventListener('click', function (event){
     }
     
     if(username === '' || content === '' || !checkedValue || name === ''){
-        errorMessage('error', 'please complete the form');
+        errorMessage('error', 'Please complete all fields before submitting');
         return;
     }else
    
