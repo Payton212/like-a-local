@@ -43,9 +43,15 @@ header {
 
  .submit {
    background-color: #124e66;
-   color: #124e66;
+   color: black;
 }
  .img{
    background-size:contain;
 
+ }
+ div{
+  color: white;
+ }
+ .modal-title, .modal-body,button{
+  color:black;
  }

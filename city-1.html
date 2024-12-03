@@ -34,12 +34,12 @@
 
         <label for="toggle"> Indoor </label>
           
-            <input type="checkbox" name ="toggle" id ="toggle">
+            
 
             <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
   <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-</div>
+            </div>
             <label for ="toggle">Outdoor</label>
 
          <div>
@@ -57,10 +57,9 @@
             <label  for ="content"> Entry</label>
             <textarea class= "formBox"type = "content" name ="content" id ="content"></textarea>
               
-            <p>drop image file here</p>
-             <input type = "file" name ="image1" id = "image" accept = "image/*">
-
-            <input class="submit" ="submit" id ="submit">
+            
+            <input type = "submit" class="submit" name="submit" id ="btnSubmit" value="Click To Submit">
+            
 
             <div><p id ="error"></p></div>
         </form>
@@ -68,7 +67,27 @@
 </main>
 <footer>
 </footer>
-    
+
+
+  
+  <!-- Modal structure -->
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Final Submit!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>are you sure you want to submit</p>
+        </div>
+        <div class="modal-footer" id="modalBtns">
+          <button id = "modal-no" type="button" class="btn btn-secondary" data-bs-dismiss="modal" >No</button>
+          <button id = "modal-submit" type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
