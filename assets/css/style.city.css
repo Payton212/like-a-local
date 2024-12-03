@@ -21,10 +21,10 @@ body {
 section {
   margin: 3%;
 }
- /* .homePage { */
+ /* .homePage { 
    display: flex;
    justify-content: left;
- }
+ }*/
 
  h1 {
    display: flex;
@@ -40,9 +40,9 @@ section {
    color: white;
  }
 
- /* .formBox { */
+ /* .formBox { 
    background-color: #748d92;
- }
+ }*/
 
  .submit {
    background-color: #124e66;
