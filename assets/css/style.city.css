@@ -1,25 +1,27 @@
+
 header {
-    /* text-align: center; */
-    display: flex;
-    max-width: 50%;
-    /* flex-direction: column; */
-    justify-content: flex-start;
-    
+ display: block;
+ /* margin-top: 10px; */
+ 
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 5%;
 }
 
- body {
-    padding: 2% 10%;
-    text-align: left;
-    margin: auto;
-    background-color: #124e66;
- }
-
- #list-of-attractions{
-   display:none;
- }
-
-
- .homePage {
+body {
+   /* margin: 0 auto; */
+   /* padding: 3%; */
+   background-color: #748d92;
+   text-align: left;
+   
+}
+section {
+  margin: 3%;
+}
+ /* .homePage { */
    display: flex;
    justify-content: left;
  }
@@ -30,23 +32,52 @@ header {
  }
 
  form {
-   text: 24px;
+   font-size: 50px;
    margin-top: 20px;
    display: flex;
    flex-direction: column;
    background-color: #748d92;
+   color: white;
  }
 
- .formBox {
+ /* .formBox { */
    background-color: #748d92;
  }
 
  .submit {
    background-color: #124e66;
-   color: black;
+
+   color: white;
+
 }
  .img{
-   background-size:contain;
+   background-size:cover;
+   background-repeat: no-repeat;
+   height: 500px;
+   background-position: center;
+ }
+
+ html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+ }
+ .indoorOutdoor {
+  display: flex;
+  flex-direction: row;
+ }
+ .button {
+  width: 600px;
+  height: 150px;
+  font-size: 120px;
+  display: inline-grid;
+  margin:0 39%;
+  text-align: center;
+  background-color: #124e66;
+  color: white;
+ }
+ h2, h3,h4, h5, p {
+  font-size: 20px;
 
  }
  div{
