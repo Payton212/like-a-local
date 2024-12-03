@@ -89,3 +89,7 @@ section {
  input { 
   
  }
+ .homeB{
+  display:flex;
+  justify-content: center;
+ }

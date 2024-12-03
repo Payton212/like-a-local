@@ -143,20 +143,25 @@ function createEntrys(){
         }else if (savedEntry[i].checkedValue == 'club'){
             div.classList.add('img');
             div.style.backgroundImage = "url('assets/stockIMGS/club.jpg') ";
+            
         }else if (savedEntry[i].checkedValue == 'restaurant'){
             div.classList.add('img');
             div.style.backgroundImage = "url('assets/stockIMGS/restaurant.jpg') ";
-            Element.style.backgroundSize = "500px"
+            
+        }else if (savedEntry[i].checkedValue == 'skatepark'){
+            div.classList.add('img');
+            div.style.backgroundImage = "url('assets/stockIMGS/skatepark.jpg') ";
+            
+        }else if (savedEntry[i].checkedValue == 'festivals'){
+            div.classList.add('img');
+            div.style.backgroundImage = "url('assets/stockIMGS/festivals.jpg') ";
+            
+        }else if (savedEntry[i].checkedValue == 'golf'){
+            div.classList.add('img');
+            div.style.backgroundImage = "url('assets/stockIMGS/golf.jpg') ";
+            
         }
-                
-
-        H2.style.color = 'white';
-        H3.style.color = 'white';
-        H4.style.color = 'white';
-        H5.style.color = 'white';
-        P.style.color = 'white';
-        
-
+       
         H2.textContent = savedEntry[i].username;
         H3.textContent = savedEntry[i].name;
         H4.textContent = savedEntry[i].checkedValue;
