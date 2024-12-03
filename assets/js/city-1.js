@@ -84,11 +84,11 @@ modalSubmit.addEventListener('click', function (event) {
     
     let attractionType;
     if(flexSwitchCheckChecked.checked){
-    attractionType = 'outdoor';
-      console.log('outdoor');
+    attractionType = 'Outdoor';
+      console.log('Outdoor');
     }else{
-        attractionType = 'indoor';
-        console.log('indoor');
+        attractionType = 'Indoor';
+        console.log('Indoor');
     }
  
          venues = document.querySelectorAll('[name = "attractions"]');
@@ -147,6 +147,7 @@ function createEntrys(){
         }else if (savedEntry[i].checkedValue == 'restaurant'){
             div.classList.add('img');
             div.style.backgroundImage = "url('assets/stockIMGS/restaurant.jpg') ";
+
             
         }else if (savedEntry[i].checkedValue == 'skatepark'){
             div.classList.add('img');
@@ -162,6 +163,13 @@ function createEntrys(){
             
         }
        
+
+        
+                
+
+       
+
+
         H2.textContent = savedEntry[i].username;
         H3.textContent = savedEntry[i].name;
         H4.textContent = savedEntry[i].checkedValue;
