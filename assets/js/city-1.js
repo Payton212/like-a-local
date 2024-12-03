@@ -1,12 +1,15 @@
 const homeButton = document.getElementById('home');
-const submitButton = document.querySelector('#submit');
+const submitButton = document.querySelector('#btnSubmit');
 const usernameInput = document.getElementById('username');
-const toggleInput = document.getElementById('toggle');
+const toggleInput = document.getElementById('flexSwitchCheckChecked');
 const attractionButton = document.getElementById('attraction-type');
 const contentInput = document.querySelector('#content');
 const error = document.querySelector('#error');
 const hidden = document.getElementById('list-of-attractions');
 const radios = document.getElementsByName('attractions');
+const modalSubmit = document.getElementById('modal-submit');
+const modalNo = document.getElementById('modal-no');
+const myModal = new bootstrap.Modal('#myModal');
 
 hidden.style.display ="none";
 
@@ -46,11 +49,33 @@ function oldEntrys(){
     createEntrys();
     }
 }
+submitButton.addEventListener('click', function (event){
+    event.preventDefault();
+    const username = usernameInput.value.trim();
+    const content = contentInput.value.trim();
+    const name = nameInput.value.trim();
 
-submitButton.addEventListener('click', function (event) {
+    venues = document.querySelectorAll('[name = "attractions"]');
+    let checkedValue = null;
+   for(radio of venues){
+        if(radio.checked){
+            checkedValue = radio.value;
+            break;
+        }
+    }
+    
+    if(username === '' || content === '' || !checkedValue || name === ''){
+        errorMessage('error', 'please complete the form');
+        return;
+    }else
+   
+myModal.show();
+
+});
+modalSubmit.addEventListener('click', function (event) {
     event.preventDefault();
     
-    let isChecked = false;
+    
     const username = usernameInput.value.trim();
     const content = contentInput.value.trim();
     const name = nameInput.value.trim();
@@ -58,7 +83,7 @@ submitButton.addEventListener('click', function (event) {
 
     
     let attractionType;
-    if(toggle.checked){
+    if(flexSwitchCheckChecked.checked){
     attractionType = 'outdoor';
       console.log('outdoor');
     }else{
@@ -86,11 +111,7 @@ submitButton.addEventListener('click', function (event) {
 
    savedEntry.push(newEntry);
 
-    if(username === '' || content === ''){
-        errorMessage('error', 'please complete the form');
-        return;
-    }else
-    document.querySelector('#error').textContent = '';
+  
 
    localStorage.setItem('entry',JSON.stringify(savedEntry));
    window.location.reload();

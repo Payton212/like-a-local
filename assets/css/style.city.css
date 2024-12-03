@@ -46,7 +46,9 @@ section {
 
  .submit {
    background-color: #124e66;
+
    color: white;
+
 }
  .img{
    background-size:cover;
@@ -77,4 +79,10 @@ section {
  h2, h3,h4, h5, p {
   font-size: 20px;
 
+ }
+ div{
+  color: white;
+ }
+ .modal-title, .modal-body,button{
+  color:black;
  }
