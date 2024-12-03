@@ -104,6 +104,14 @@ section {
   color:black;
  }
 
+ input { 
+  
+ }
+ .homeB{
+  display:flex;
+  justify-content: center;
+ }
+
  .centered {
   margin: auto;
   font-size: 30px
@@ -115,3 +123,4 @@ section {
   height:100%;
   margin: 0 auto;
 }
+
